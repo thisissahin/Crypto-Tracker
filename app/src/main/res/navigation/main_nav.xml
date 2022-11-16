@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/rates_fragment">
+
+    <fragment
+        android:id="@+id/rates_fragment"
+        android:name="az.cryptotracker.presentation.ui.fragment.RatesFragment.RatesFragment"
+        android:label="RatesFragment">
+        <action
+            android:id="@+id/action_navigation_to_rate_history"
+            app:destination="@id/rate_history_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/rate_history_fragment"
+        android:name="az.cryptotracker.presentation.ui.fragment.RateHistoryFragment.RateHistoryFragment"
+        android:label="RateHistoryFragment">
+        <argument
+            android:name="type"
+            app:argType="string" />
+    </fragment>
+
+</navigation>

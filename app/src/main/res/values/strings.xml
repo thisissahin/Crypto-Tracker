@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Crypto Tracker</string>
+    <string name="rate_service_channel">Fetch Rate Service channel</string>
+    <string name="notify_rate_change_channel">Notify rate change channel</string>
+    <string name="min_value">Min value</string>
+    <string name="max_value">Max value</string>
+    <string name="set_range">Set range</string>
+    <string name="open_history">Open history</string>
+    <string name="empty_field_warning">Cannot be empty</string>
+    <string name="value">Value. %f</string>
+</resources>
