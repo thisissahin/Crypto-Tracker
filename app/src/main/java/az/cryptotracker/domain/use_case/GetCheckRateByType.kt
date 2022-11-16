@@ -7,5 +7,5 @@ import javax.inject.Inject
 class GetCheckRateByType @Inject constructor(
     private val ratesRepository: LocalRepository
 ) {
-    suspend operator fun invoke(type: CryptoType) = ratesRepository.getCheckRateByType(type)
+    suspend operator fun invoke(type: CryptoType) = ratesRepository.getCheckRangeByType(type)
 }

@@ -8,7 +8,7 @@ interface LocalRepository {
     suspend fun insertRateHistory(rate: CryptoRate)
     suspend fun getRateHistoryByType(type: String): List<CryptoRate>?
 
-    suspend fun getCheckRateByType(type: CryptoType): CryptoRange?
-    suspend fun setCheckRate(rate: CryptoRange)
+    suspend fun getCheckRangeByType(type: CryptoType): CryptoRange?
+    suspend fun setCheckRange(range: CryptoRange)
 
 }
